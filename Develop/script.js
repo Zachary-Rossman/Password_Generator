@@ -37,12 +37,6 @@ function generatePassword() {
   if (isUppercase === true) {
     allChoices = allChoices.concat(uppercaseLetter);
   }
-  if (isLowercase === true) {
-    allChoices = allChoices.concat(lowercaseLetter);
-  }
-  if (isSpecialCharacter === true) {
-    allChoices = allChoices.concat(specialCharacter);
-  }
 
   for (let i = 0; i < passwordLength; i++) {
     let maximum = allChoices.length - 1;
